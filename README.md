@@ -14,4 +14,6 @@ The file should be .txt and should be in this order(without the number):
 4. First name of employee 2
 5. and so on
 
-at the end the should be 1 newline indicate that the list end there.
+At the end the should be 1 newline indicate that the list end there.
+See emp.txt for file example.
+HTML file provide is based on the data on emp.txt
