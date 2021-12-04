@@ -4,7 +4,7 @@
 HTML REPORT GENERATOR
 Year 1 semester 1 SE C PROGRAMMING PROJECT
 
-#About
+# About
 This program will generate html for employee list.
 The program will ask the user file which contain data in it.
 The file should be .txt and should be in this order(without the number):
