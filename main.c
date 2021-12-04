@@ -34,15 +34,13 @@ int main()
         s[count]=ch;
         ch=fgetc(fp);
         if(s[count]=='\n'){
-            int size = strlen(s);
-            s[size-1] = '\0';
             if(t%3==1){
                 strcpy(no[t2].fn,s);
+                remove_spaces(no[t2].fn);
             }
             else if(t%3==2){
                 strcpy(no[t2].ln,s);
                 remove_spaces(no[t2].ln);
-
             }
             else if(t%3==0){
                 sscanf(s, "%d", &no[t2].sn);
