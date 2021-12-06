@@ -6,8 +6,8 @@ Year 1 semester 1 SE C PROGRAMMING PROJECT<br />
 
 # About
 This program will generate html for student list.<br />
-The program will ask the user to enter title for the list of student(e.g. Class name).<br />
-Then the program will ask for file which contain data in it.<br />
+The program will ask the user to enter title for the list of student(e.g. Class name, Subject name, etc.).<br />
+Then the program will ask the user for file which contain data in it.<br />
 The file should be .txt and should be in this order(without the number):
 1. First name of student 1
 2. Last name of student 1
