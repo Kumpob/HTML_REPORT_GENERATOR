@@ -109,7 +109,7 @@ int main()
         fprintf(output,"<td>%d</td>\n",no[i].sn);
         fprintf(output,"<td>%s</td>\n",no[i].fn);
         fprintf(output,"<td>%s</td>\n",no[i].ln);
-        fprintf(output,"<td>%s</td>\n",no[i].email);
+        fprintf(output,"<td><a href=\"mailto:%s\"target=\"_blank\">%s</a></td>\n",no[i].email,no[i].email);
         fprintf(output,"<td>%.2lf</td>\n",no[i].GPA);
         fprintf(output,"</tr>\n");
         totG=totG+no[i].GPA;
