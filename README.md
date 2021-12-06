@@ -5,7 +5,7 @@ HTML REPORT GENERATOR<br />
 Year 1 semester 1 SE C PROGRAMMING PROJECT<br />
 
 # About
-This program will generate html for student list.<br />
+This program will generate html for student list with their GPA and the average of the whole class.<br />
 The program will ask the user to enter title for the list of student(e.g. Class name, Subject name, etc.).<br />
 Then the program will ask the user for file which contain data in it.<br />
 The file should be .txt and should be in this order(without the number):
