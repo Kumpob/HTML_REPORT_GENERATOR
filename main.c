@@ -85,15 +85,13 @@ int main()
     fprintf(output,"<html>\n");
     fprintf(output,"<head>\n");
     fprintf(output,"<title>Html report generator</title>\n");
-    fprintf(output,"<style>\n");
-    fprintf(output,"\n");
-    fprintf(output,"</style>\n");
     fprintf(output,"</head>\n");
     fprintf(output,"<body>\n");
     fprintf(output,"<h1>\n");
     fprintf(output,"<center>\n");
     fprintf(output,"Html report generator\n");
     fprintf(output,"<br>%s\n",title);
+    fprintf(output,"</center>\n");
     fprintf(output,"</h1>\n");
     fprintf(output,"<table border=\"1\", width=\"800\" style=\"margin-left:auto;margin-right:auto;\">\n");
     fprintf(output,"<tr>\n");
@@ -104,6 +102,7 @@ int main()
     fprintf(output,"<th>Email Address</th>\n");
     fprintf(output,"<th>GPA</th>\n");
     fprintf(output,"</tr>\n");
+    double totG;
     for(int i=1;i<t2;i++){
         fprintf(output,"<tr>\n");
         fprintf(output,"<td>%d</td>\n",i);
@@ -113,9 +112,11 @@ int main()
         fprintf(output,"<td>%s</td>\n",no[i].email);
         fprintf(output,"<td>%.2lf</td>\n",no[i].GPA);
         fprintf(output,"</tr>\n");
+        totG=totG+no[i].GPA;
     }
     fprintf(output,"</table>\n");
-    fprintf(output,"</center>\n");
+    double avgpa=totG/(t2-1);
+    fprintf(output,"<br><center>Average GPA=%.2lf</center>",avgpa);
     fprintf(output,"</body>\n");
     fprintf(output,"</html>\n");
     return 0;
