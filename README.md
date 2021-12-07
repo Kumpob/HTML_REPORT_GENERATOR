@@ -19,5 +19,5 @@ The file should be .txt and should be in this order(without the number):
 
 At the end the should be 1 newline indicate that the list end there.<br />
 #
-See emp.txt for data example and title.txt for title example.<br />
-HTML file provide is based on the data in emp.txt
+See data.txt for data example and title.txt for title example.<br />
+HTML file provide is based on the data in data.txt
