@@ -17,7 +17,7 @@ The file should be .txt and should be in this order(without the number in front)
 6. First name of student 2
 7. and so on
 
-At the end the should be 1 newline indicate that the list end there.<br />
+At the end there should be 1 newline indicate that the list end there.<br />
 #
 See data.txt for data example and title.txt for title example.<br />
 HTML file provide is based on the data in data.txt
