@@ -9,6 +9,7 @@ This program will generate html for student list with their GPA and the average 
 The program will ask the user to enter title for the list of student(e.g. Class name, Subject name, etc.).<br />
 Then the program will ask the user for file which contain data in it.<br />
 The file should be .txt and should be in this order(without the number in front):
+0. total nmber of student
 1. First name of student 1
 2. Last name of student 1
 3. Serial number of student 1
@@ -18,6 +19,7 @@ The file should be .txt and should be in this order(without the number in front)
 7. and so on
 
 At the end there should be 1 newline indicate that the list end there.<br />
+For every GPA add an additional 1 spacebar(including for the last one on that line)
 #
 See data.txt for data example and title.txt for title example.<br />
 HTML file provide is based on the data in data.txt
