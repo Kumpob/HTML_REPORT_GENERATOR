@@ -35,7 +35,17 @@ char titletaker(char *title){
     fclose(fp2);
     return title;
 }
-
+int lcount(char *fu){
+    FILE *fp5=fopen(fu,"r");
+    int tl;
+    char line3[80] = {0};
+    while (fgets(line3, 80, fp5))
+    {
+        ++tl;
+    }
+    fclose(fp5);
+    return tl;
+}
 int gpataker(char *line2, int line_count2, struct emp *no, int nl){
     char a[100];
     int i=0,n=0;
@@ -122,14 +132,7 @@ int main()
     gets(fi);
     char fu[25];
     sprintf(fu,"%s.txt",fi);
-    FILE *fp5=fopen(fu,"r");
-    int tl;
-    char line3[80] = {0};
-    while (fgets(line3, 80, fp5))
-    {
-        ++tl;
-    }
-    fclose(fp5);
+    int tl= lcount(&fu);
     FILE *fp=fopen(fu,"r");
     struct emp no[tl/5];
     char line2[80] = {0};
